@@ -2,7 +2,11 @@ using namespace std;
 #include <iostream>
 #include <iomanip> // lets me set the precision on a float output using "setprecision"
 //Today I will learn how to use functions
-
+void loop(){ //function for loop
+    for (int i = 0; i <= 5; i++){ // initialize i, then the condition, then the iteration
+    cout << i;
+    }
+}
 //the void means I don't want the function to return anything (that doesn't mean I can't print out of it or call another function from it)
 void output(int amount, float price, string name){
     cout << fixed << setprecision(2) << "You bought " << amount << " " << name << "s and they cost $" << price <<  " each\n In total you owe $" << price * amount; //the fixed stops it from outputting scientific notation
@@ -23,6 +27,8 @@ void input(){
 }
 
 int main(){
-    input();
+    //input();
+    loop();
     return 0;
 }
+
